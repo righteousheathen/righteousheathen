@@ -4,7 +4,7 @@ data/pipeline.md
 data/scan-history.tsv
 # reports/*.md          -- tracked (personal repo)
 !reports/.gitkeep
-output/*
+# output/*               -- tracked (personal repo)
 !output/.gitkeep
 batch/logs/*
 !batch/logs/.gitkeep
