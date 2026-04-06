@@ -705,7 +705,7 @@ func (m PipelineModel) renderPreview() string {
 	divider := lipgloss.NewStyle().Foreground(m.theme.Overlay)
 
 	var lines []string
-	lines = append(lines, padStyle.Render(divider.Render(strings.Repeat("\u2500", m.width-4))))
+	lines = append(lines, padStyle.Render(divider.Render(strings.Repeat("\u2500", max(0, m.width-4)))))
 
 	labelStyle := lipgloss.NewStyle().Foreground(m.theme.Sky).Bold(true)
 	valueStyle := lipgloss.NewStyle().Foreground(m.theme.Text)
@@ -732,7 +732,7 @@ func (m PipelineModel) renderPreview() string {
 	} else if app.Notes != "" {
 		// Fallback: show notes
 		notes := app.Notes
-		if len(notes) > m.width-10 {
+		if m.width > 13 && len(notes) > m.width-10 {
 			notes = notes[:m.width-13] + "..."
 		}
 		lines = append(lines, padStyle.Render(dimStyle.Render(notes)))
