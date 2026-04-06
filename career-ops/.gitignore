@@ -1,8 +1,8 @@
 # Personal data (user fills these)
-data/applications.md
+# data/applications.md  -- tracked (personal repo)
 data/pipeline.md
 data/scan-history.tsv
-reports/*.md
+# reports/*.md          -- tracked (personal repo)
 !reports/.gitkeep
 output/*
 !output/.gitkeep
@@ -16,8 +16,8 @@ jds/*
 !jds/.gitkeep
 
 # User config
-config/profile.yml
-portals.yml
+# config/profile.yml    -- tracked (personal repo)
+# portals.yml           -- tracked (personal repo)
 
 # Generated
 .resolved-prompt-*

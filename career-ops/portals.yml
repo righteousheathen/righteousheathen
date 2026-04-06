@@ -1,0 +1,212 @@
+# Portal Scanner Configuration — Luxembourg Finance & Accounting Jobs
+
+title_filter:
+  positive:
+    # Finance & Accounting
+    - "Accountant"
+    - "Accounting"
+    - "Finance"
+    - "Financial"
+    - "Accounts Payable"
+    - "Accounts Receivable"
+    - "AP"
+    - "AR"
+    - "Credit Control"
+    - "Bookkeeper"
+    - "Bookkeeping"
+    - "Controller"
+    - "Comptable"        # French: accountant
+    - "Finance Officer"
+    - "Finance Analyst"
+    - "Financial Analyst"
+    - "Treasury"
+    # Administrative
+    - "Administrative"
+    - "Administration"
+    - "Admin Officer"
+    - "Office Manager"
+    - "Operations Officer"
+    - "Assistant administratif"
+    # Procurement / Operations
+    - "Procurement"
+    - "Purchasing"
+    - "Supply Chain"
+    # Data / Reporting
+    - "Data Analyst"
+    - "Reporting Analyst"
+    - "Business Analyst"
+    - "Power BI"
+  negative:
+    - "Intern"
+    - "Trainee"
+    - "Stage"            # French: internship
+    - "Senior Director"
+    - "VP "
+    - "Chief "
+    - "C-level"
+    - "Software Engineer"
+    - "Developer"
+    - "IT Manager"
+    - "Marketing"
+  seniority_boost:
+    - "Senior"
+    - "Lead"
+    - "Manager"
+    - "Officer"
+    - "Specialist"
+
+# --- Search queries for Luxembourg job boards ---
+search_queries:
+
+  - name: LinkedIn — Luxembourg Finance
+    query: 'site:linkedin.com/jobs "Luxembourg" "accountant" OR "finance officer" OR "accounts payable" OR "accounts receivable"'
+    enabled: true
+
+  - name: EuroJobs — Luxembourg Accounting
+    query: 'site:eurojobs.com Luxembourg accountant OR "finance officer" OR "accounts payable"'
+    enabled: true
+
+  - name: Indeed Luxembourg — Finance
+    query: 'site:indeed.com/jobs "Luxembourg" accountant OR "financial analyst" OR "finance officer" OR "credit control"'
+    enabled: true
+
+  - name: Jobs.lu — Finance & Accounting
+    query: 'site:jobs.lu accountant OR "finance officer" OR "accounts payable" OR comptable'
+    enabled: true
+
+  - name: Moovijob Luxembourg — Accounting
+    query: 'site:moovijob.com Luxembourg accountant OR finance OR comptable OR "administrative officer"'
+    enabled: true
+
+  - name: Careers.lu — Finance
+    query: 'site:careers.lu Luxembourg accountant OR "finance officer" OR "data analyst"'
+    enabled: true
+
+  - name: Glassdoor Luxembourg — Finance
+    query: 'site:glassdoor.com Luxembourg "accountant" OR "finance analyst" OR "accounts payable officer"'
+    enabled: true
+
+  - name: Luxembourg Finance — Administrative
+    query: '"Luxembourg" "administrative officer" OR "office administrator" OR "operations officer" finance'
+    enabled: true
+
+  - name: Luxembourg — Power BI / Data Finance
+    query: '"Luxembourg" "Power BI" OR "data analyst" finance OR accounting OR reporting'
+    enabled: true
+
+# --- Key employers in Luxembourg (finance, banking, funds, EU institutions) ---
+tracked_companies:
+
+  # -- EU Institutions (major Luxembourg employers) --
+  - name: European Commission Luxembourg
+    careers_url: https://epso.europa.eu/en/job-opportunities
+    scan_method: websearch
+    scan_query: '"European Commission" Luxembourg "finance" OR "accounting" OR "administrative" jobs'
+    notes: "EU institutions — major employer in Luxembourg"
+    enabled: true
+
+  - name: European Court of Auditors
+    careers_url: https://www.eca.europa.eu/en/Pages/Vacancies.aspx
+    scan_method: websearch
+    scan_query: '"European Court of Auditors" Luxembourg vacancies finance OR accounting OR administrative'
+    enabled: true
+
+  - name: EIB — European Investment Bank
+    careers_url: https://www.eib.org/en/about/jobs/index.htm
+    scan_method: websearch
+    scan_query: '"European Investment Bank" Luxembourg jobs finance OR accountant OR analyst'
+    enabled: true
+
+  - name: Eurostat
+    careers_url: https://ec.europa.eu/eurostat/web/careers
+    scan_method: websearch
+    scan_query: 'Eurostat Luxembourg vacancies finance OR statistics OR data analyst'
+    enabled: true
+
+  # -- Major banks & financial institutions --
+  - name: BGL BNP Paribas
+    careers_url: https://jobs.bnpparibas.com/job/Luxembourg
+    scan_method: websearch
+    scan_query: '"BGL BNP Paribas" OR "BNP Paribas Luxembourg" jobs accountant OR finance OR analyst'
+    enabled: true
+
+  - name: Banque de Luxembourg
+    careers_url: https://www.banquedeluxembourg.com/en/bank/careers
+    scan_method: websearch
+    scan_query: '"Banque de Luxembourg" careers finance OR accountant OR analyst'
+    enabled: true
+
+  - name: ING Luxembourg
+    careers_url: https://www.ing.lu/web/ING/careers
+    scan_method: websearch
+    scan_query: '"ING Luxembourg" careers finance OR accountant OR data analyst'
+    enabled: true
+
+  - name: Clearstream (Deutsche Börse)
+    careers_url: https://www.clearstream.com/clearstream-en/about-clearstream/careers
+    scan_method: websearch
+    scan_query: '"Clearstream" Luxembourg careers finance OR accountant OR operations'
+    enabled: true
+
+  # -- Big 4 & Accounting Firms --
+  - name: PwC Luxembourg
+    careers_url: https://www.pwc.lu/en/careers.html
+    scan_method: websearch
+    scan_query: '"PwC Luxembourg" careers accountant OR finance OR audit OR analyst'
+    enabled: true
+
+  - name: Deloitte Luxembourg
+    careers_url: https://jobs2.deloitte.com/lu/en
+    scan_method: websearch
+    scan_query: '"Deloitte Luxembourg" jobs accountant OR finance OR audit OR analyst'
+    enabled: true
+
+  - name: KPMG Luxembourg
+    careers_url: https://home.kpmg/lu/en/home/careers.html
+    scan_method: websearch
+    scan_query: '"KPMG Luxembourg" careers accountant OR audit OR finance OR analyst'
+    enabled: true
+
+  - name: EY Luxembourg
+    careers_url: https://www.ey.com/en_lu/careers
+    scan_method: websearch
+    scan_query: '"EY Luxembourg" OR "Ernst & Young Luxembourg" careers accountant OR finance OR audit'
+    enabled: true
+
+  # -- Fund administration & asset management --
+  - name: State Street Luxembourg
+    careers_url: https://careers.statestreet.com
+    scan_method: websearch
+    scan_query: '"State Street Luxembourg" jobs finance OR fund accountant OR analyst'
+    enabled: true
+
+  - name: Northern Trust Luxembourg
+    careers_url: https://careers.northerntrust.com
+    scan_method: websearch
+    scan_query: '"Northern Trust Luxembourg" jobs finance OR fund accountant OR administrator'
+    enabled: true
+
+  - name: Alter Domus
+    careers_url: https://www.alterdomus.com/careers
+    scan_method: websearch
+    scan_query: '"Alter Domus" Luxembourg careers fund accountant OR finance OR administrator'
+    enabled: true
+
+  - name: Aztec Group Luxembourg
+    careers_url: https://www.aztecgroup.eu/careers
+    scan_method: websearch
+    scan_query: '"Aztec Group" Luxembourg careers accountant OR fund administrator OR finance'
+    enabled: true
+
+  # -- General Luxembourg job boards --
+  - name: Jobs.lu board
+    careers_url: https://www.jobs.lu/en/job-offers/finance-accounting
+    scan_method: websearch
+    scan_query: 'site:jobs.lu accountant OR "finance officer" OR "accounts payable" OR comptable Luxembourg'
+    enabled: true
+
+  - name: Moovijob.com
+    careers_url: https://www.moovijob.com/jobs/luxembourg/finance
+    scan_method: websearch
+    scan_query: 'site:moovijob.com accountant OR finance OR comptable Luxembourg'
+    enabled: true

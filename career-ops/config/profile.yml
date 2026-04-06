@@ -1,0 +1,58 @@
+# Career-Ops Profile Configuration — Bubacarr Barrow
+
+candidate:
+  full_name: "Bubacarr Barrow"
+  email: "Batisbaro@gmail.com"
+  phone: "+220 3151153"
+  location: "Bijilo, The Gambia (targeting Luxembourg)"
+  linkedin: ""
+  portfolio_url: ""
+  github: ""
+
+target_roles:
+  primary:
+    - "Finance Analyst"
+    - "Accountant"
+    - "Administrative Officer"
+  archetypes:
+    - name: "Accountant / Finance Officer"
+      level: "Mid-level"
+      fit: "primary"
+    - name: "Data Analyst (Finance)"
+      level: "Mid-level"
+      fit: "primary"
+    - name: "Administrative & Finance Officer"
+      level: "Mid-level"
+      fit: "primary"
+    - name: "Procurement / AP Officer"
+      level: "Mid-level"
+      fit: "secondary"
+
+narrative:
+  headline: "Finance & Data Analytics professional with cross-sector accounting experience"
+  exit_story: "Accountancy graduate with IPFM UK certification and 4+ years across fintech, telecoms, and agri-commodity sectors. Now targeting finance and administrative roles in Luxembourg."
+  superpowers:
+    - "AR/AP and credit control with measurable impact (reduced receivables GMD 11M → 9M)"
+    - "Data analytics across SQL, Power BI, and Tableau"
+    - "Cross-functional finance operations (budgeting, procurement, export documentation)"
+    - "ERP proficiency (Tally ERP, QuickBooks)"
+  proof_points:
+    - name: "AR Recovery at DK Telecom"
+      hero_metric: "Reduced outstanding receivables by GMD 2M in 2 months"
+    - name: "Comafrique Export Operations"
+      hero_metric: "Coordinated full export cycle with Maersk, CMA CGM, MSC"
+    - name: "Google Data Analytics Certification"
+      hero_metric: "Professional Certificate 2022"
+
+compensation:
+  target_range: "€45,000–€65,000"
+  currency: "EUR"
+  minimum: "€40,000"
+  location_flexibility: "Luxembourg (open to relocation)"
+
+location:
+  country: "Luxembourg"
+  city: "Luxembourg City"
+  timezone: "CET"
+  visa_status: "Requires work permit / visa sponsorship"
+  relocation: "Yes — targeting Luxembourg"
